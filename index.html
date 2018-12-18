@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fraud Detection</title>
+</head>
+<body>
+<h2>Type the Features for the transaction you want to know if it Fruad or not</h2>
+
+<form action="http://127.0.0.1:9000/predict" method="get">
+  ______Type_______:
+  <input type="text" name="type">
+  <br><br>
+  _______Amount_____:
+  <input type="text" name="amount">
+  <br><br>
+  ___oldbalanceOrg__:
+  <input type="text" name="old_bal_org">
+  <br><br>
+  __newbalanceOrig__:
+  <input type="text" name="new_bal_org">
+  <br><br>
+  _____nameDest_____:
+  <input type="text" name="name_dest">
+  <br><br>
+  __oldbalanceDest__:
+  <input type="text" name="old_bal_det">
+  <br><br>
+  __newbalanceDest__:
+  <input type="text" name="new_bal_det">
+  <br><br>
+  
+  <input type="submit" value="Predict">
+</form>
+
+</body>
+</html>
